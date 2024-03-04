@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemons Render</title>
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-stone-900">
+
+    <h1 class="text-white text-2xl text-center mt-5">Pokemons</h1>
+
+    <ul class="js-pokemons-list flex flex-wrap gap-[20px] w-[1100px] m-auto pt-[30px]">
+   
+    </ul>
+
+
+    <template class="js-pokemons-template">
+        <li class="list-none inline-flex flex-col items-center bg-sky-900 rounded-xl">
+            <span class="poke-number ml-[160px] bg-yellow-400 p-2 rounded-bl-xl rounded-tr-[11px]">001</span>
+            <img class="poke-img w-[200px] h-[120px] object-contain mt-[40px]" src="http://www.serebii.net/pokemongo/pokemon/001.png" alt="">
+            <strong class="poke-name text-white text-center text-2xl font-bold mb-2">Bulbasar</strong>
+            <div class="flex flex-col items-start bg-stone-600 w-[202px] h-[170px] p-2 rounded-b-[11px]">
+                <p class="poke-weight text-white text-[18px]">6.9 kg</p>
+                <p class="poke-candy-count text-white text-[18px]">  25</p>
+                <p class="poke-egg text-white text-[18px]"></p>
+                <p class="poke-weakness text-white text-[18px]">Grass, Poison</p>
+            </div>
+        </li>
+    </template>
+
+
+ 
+
+ 
+
+    <script src="./pokemons.js"></script>
+    <script src="./main.js"></script>
+    
+</body>
+</html>
